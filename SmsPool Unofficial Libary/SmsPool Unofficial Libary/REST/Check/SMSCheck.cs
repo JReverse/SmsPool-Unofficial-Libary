@@ -1,10 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SmsPool_Unofficial_Libary
@@ -37,9 +33,9 @@ namespace SmsPool_Unofficial_Libary
                 }
                 return "Failed to check order.";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return "Failed to check order.";
+                throw new Exception(ex.ToString());
             }
         }
     }

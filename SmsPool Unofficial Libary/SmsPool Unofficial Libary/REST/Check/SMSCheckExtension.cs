@@ -9,12 +9,12 @@ namespace SmsPool_Unofficial_Libary
 {
     class SMSCheckExtension
     {
-            [JsonProperty("message")]
-            public static string _message { get; set; }
-            public string Message
-            {
-                get { return _message; }
-            }
+        [JsonProperty("message")]
+        public static string _message { get; set; }
+        public string Message
+        {
+            get { return _message; }
+        }
         
         [JsonProperty("success")]
         public static int _successcode { get; set; }

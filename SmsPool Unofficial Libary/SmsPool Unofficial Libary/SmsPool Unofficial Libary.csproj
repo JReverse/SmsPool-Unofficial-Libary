@@ -31,11 +31,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json.Schema, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.13\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.Schema.3.0.14\lib\net45\Newtonsoft.Json.Schema.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,25 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Multi\Models\SMSException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="REST\Cancel\SMSCancel.cs" />
     <Compile Include="REST\Cancel\SMSCancelExtension.cs" />
     <Compile Include="REST\Check\SMSCheck.cs" />
     <Compile Include="REST\Check\SMSCheckExtension.cs" />
-    <Compile Include="REST\HTTP\SMSError.cs" />
     <Compile Include="REST\HTTP\SMSHttpClient.cs" />
-    <Compile Include="REST\HTTP\SMSHttpError.cs" />
-    <Compile Include="REST\HTTP\SMSHttpException.cs" />
     <Compile Include="REST\Order\SMSOrder.cs" />
     <Compile Include="REST\Order\SMSOrderExtension.cs" />
-    <Compile Include="REST\RateLimit\RateLimit.cs" />
-    <Compile Include="REST\RateLimit\RateLimitException.cs" />
     <Compile Include="SMSClient.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

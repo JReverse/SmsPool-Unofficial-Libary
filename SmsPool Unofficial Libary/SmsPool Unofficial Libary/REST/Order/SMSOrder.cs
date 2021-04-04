@@ -1,10 +1,6 @@
 ﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SmsPool_Unofficial_Libary
@@ -29,9 +25,9 @@ namespace SmsPool_Unofficial_Libary
             }
             return "Failed to order number.";
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return "Failed to order number.";
+                throw new Exception(ex.ToString());
             }
         }
     }

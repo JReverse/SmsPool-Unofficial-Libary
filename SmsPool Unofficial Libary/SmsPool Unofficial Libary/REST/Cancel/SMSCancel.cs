@@ -1,9 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace SmsPool_Unofficial_Libary
@@ -24,9 +21,9 @@ namespace SmsPool_Unofficial_Libary
                 }
                 else { return "Failed to cancel order."; };
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return "Failed to cancel order.";
+                throw new Exception(ex.ToString());
             }
         }
     }
