@@ -7,7 +7,12 @@ namespace SmsPool_Unofficial_Libary
 {
     public class SMSHttpClient
     {
+        private readonly SMSClient _smsClient;
         public string Api { get; set; } = "https://smspool.net/api/";
+        public SMSHttpClient(SMSClient smsClient)
+        {
+            _smsClient = smsClient;
+        }
 
         public async Task<HttpResponseMessage> Send(string endpoint)
         {

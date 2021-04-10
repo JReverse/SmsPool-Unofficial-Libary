@@ -10,6 +10,7 @@
 
         public SMSClient(string api_key)
         {
+            HttpClient = new SMSHttpClient(this);
             Api_key = api_key;
         }
 
